@@ -1,0 +1,200 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+    <title>ALEADO: Авто аукционы Японии</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="centrifugo-url" content="wss://auctions.aleado.ru/ws">
+    <meta name="centrifugo-user" content="e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855">
+    <meta name="centrifugo-token" content="eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJlM2IwYzQ0Mjk4ZmMxYzE0OWFmYmY0Yzg5OTZmYjkyNDI3YWU0MWU0NjQ5YjkzNGNhNDk1OTkxYjc4NTJiODU1IiwiZXhwIjoxNzA0OTM0ODYxfQ.OjVkySauqrjItKYFNqAnRFckDYfiLFjCGvhfXYE0mpw">
+
+    <link rel="stylesheet" href="/static/js/lib/video-js/video.min.css">
+    <link href="/static/css/main.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="/static/css/aleado/aleado.css" />
+    <link rel="icon" href="/static/img/aleado/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="/static/js/highslide/highslide.css" />
+    <link rel="stylesheet" type="text/css" href="/static/js/highslide/highslide-slideshow.css" />
+    <link rel="stylesheet" type="text/css" href="/static/css/menu.css" />
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/centrifugal/centrifuge-js@2.7.7/dist/centrifuge.min.js"></script>
+    <script type="text/javascript" src="/static/js/utils.js"></script>
+    <script type="text/javascript" src="/static/js/popup.js"></script>
+    <script type="text/javascript" src="/static/js/highslide/highslide-full.packed.js"></script>
+    <script type="text/javascript" src="/static/js/highslide/highslide-slideshow.js"></script>
+    <script type="text/javascript" src="/static/js/menu.js">
+
+    /***********************************************
+     * AnyLink CSS Menu script v2.0- © Dynamic Drive DHTML code library (www.dynamicdrive.com)
+     * This notice MUST stay intact for legal use
+     * Visit Project Page at http://www.dynamicdrive.com/dynamicindex1/anylinkcss.htm for full source code
+     ***********************************************/
+
+    </script>
+
+    <script type="text/javascript">
+        anylinkcssmenu.init("anchorclass")
+    </script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-37848788-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-37848788-1');
+    </script>
+
+    <div id="popupMask" style="display:none;"></div>
+    <div id="popupContainer" style="display:none;">
+        <table width="100%" cellpadding="10" cellspacing="3" style="border: 2px solid #000000;">
+        <tr style="background:#FFFFFF" valign="top"><td id="popup_content"></td></tr>
+        </table>
+    </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+    <link rel="stylesheet" href="/static/css/aleado/jquery-ui/jquery-ui.css">
+    <script src="/static/js/aleado/jquery-ui-1.12.1.costom.min.js"></script>
+    <script src="/static/js/lib/ui/timepicker-addon/jquery-ui-timepicker-addon.js"></script>
+    <link rel="stylesheet" href="/static/css/aleado/jquery-ui/jquery-ui-timepicker-addon.css">
+    <script type="text/javascript" src="/static/js/jquery/jquery.notify.js"></script>
+    <link rel="stylesheet" href="/static/js/lib/multiselect/index.css">
+    <script src="/static/js/lib/multiselect/index.js"></script>
+    <script type="text/javascript" src="/static/js/aleado/main.js"></script>
+</head>
+
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" onload="loadDocument();">
+
+    <script type="text/javascript">
+        hs.graphicsDir = '/static/js/highslide/graphics/';
+        hs.outlineType = 'rounded-white';
+    </script>
+
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+        <td>
+
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+                <td width="189" height="71" valign="middle" style="background: url(/static/img/logo_header.gif)">
+                    <div style="MARGIN-LEFT: 8px; width:181px"><a href="/start"><img src="/static/img/aleado/logo.gif" border="0" /></a></div>
+                </td>
+                <td height="71" style="background: url(/static/img/bg02.gif)">
+
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0" class="Verdana12px">
+                    <tr>
+                        <td height="24">&nbsp;</td>
+                        <td height="24" align="right">
+                            <a href="?lang=ru"><font color="#B9B9B9"><b>rus</b></font></a>&nbsp;&nbsp;<a href="?lang=en"><font color="#B9B9B9"><b>eng</b></font></a>&nbsp;&nbsp;
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="left" valign="middle">
+                            <table border="0" cellpadding="1" cellspacing="1" class="Verdana12px"><tr>
+<td><img src="/static/img/main_menu_separator.gif" alt=""></td>
+<td valign="middle" nowrap align="center"><a href="/auctions/?p=project/searchform&amp;searchtype=max&amp;s&amp;ld" class="anchorclass" rel="subauto">Автомобили</a></td>
+<div id="subauto" class="anylinkcss"><ul>
+<li><b>Аукционы Японии</b></li>
+<li><a href="/stats/?p=project/fastform">Статистика продаж</a></li>
+<li><a href="/autocatalog/?p=project/companies">Каталог</a></li>
+</ul></div>
+<td><img src="/static/img/main_menu_separator.gif" alt=""></td>
+<td valign="middle" nowrap align="center"><a href="/stats/?p=project/fastform">Авто<br/>статистика</a></td>
+<td><img src="/static/img/main_menu_separator.gif" alt=""></td>
+<td valign="middle" nowrap align="center"><a href="/autocatalog/?p=project/companies">Авто<br/>каталог</a></td>
+<td><img src="/static/img/main_menu_separator.gif" alt=""></td>
+<td valign="middle" nowrap align="center"><a href="/auctions/?p=project/productiondate">Определение даты<br/>выпуска автомобиля</a></td>
+<td><img src="/static/img/main_menu_separator.gif" alt=""></td>
+<td valign="middle" nowrap align="center"><a href="/moto/?p=project/searchform&amp;searchtype=max&amp;s&amp;ld" class="anchorclass" rel="submoto">Мотоциклы</a></td>
+<div id="submoto" class="anylinkcss"><ul>
+<li><a href="/moto/?p=project/searchform&amp;searchtype=max&amp;s&amp;ld">Аукционы Японии</a></li>
+<li><a href="/motostats/?p=project/searchform&amp;searchtype=max&amp;s&amp;ld">Статистика продаж</a></li>
+</ul></div>
+<td><img src="/static/img/main_menu_separator.gif" alt=""></td>
+<td valign="middle" nowrap align="center"><a href="/bids/parts/search">Заказ новых<br/>оригинальных запчастей</a></td>
+<td><img src="/static/img/main_menu_separator.gif" alt=""></td>
+<td valign="middle" nowrap align="center"><a href="/yahoo/">Аукцион<br/>Yahoo</a></td>
+<td><img src="/static/img/main_menu_separator.gif" alt=""></td>
+<td valign="middle" nowrap align="center"><a href="/chat/?p=project/foundtopics">Вопрос<br/>Ответ</a></td>
+<td><img src="/static/img/main_menu_separator.gif" alt=""></td>
+<td valign="middle" nowrap align="center"><a href="https://aleado.ru/contacts.html">Контакты</a></td>
+</tr></table>
+                        </td>
+                        <td align="right" valign="top">
+                            <table class="Verdana16px" cellspacing="2" cellpadding="2" border="0"><tr><td nowrap><a href="https://auctions.aleado.ru/auth/login.php?cur_url=YXVjdGlvbnM/cD1wcm9qZWN0L2ZpbmRsb3RzJnMmbGQ=">Вход</a></td><td valign="middle"><img src="/static/img/main_menu_separator.gif" alt=""></td><td nowrap align="center" valign="middle"><a style="padding-right:5px;" href="https://auctions.aleado.ru/manager/?p=project/register">Регистрация</a></td></tr></table>
+                        </td>
+                    </tr>
+                    </table>
+
+                </td>
+            </tr>
+            <tr>
+                <td height="9" style="background: url(/static/img/bg_bottom.gif)"></td>
+                <td height="9" style="background: url(/static/img/bg_bottom.gif)"></td>
+            </tr>
+            </table>
+
+        </td>
+    </tr>
+    <tr>
+        <td>
+<table border="0" width="680" height="400" cellpadding="10" align="center" class="Verdana12px"><tr><td align="center"><table border="0" height="100" align="center"><tr><td class="Verdana12px" align="center"><h1 align="center">ВНИМАНИЕ!</h1><p>Для доступа к разделам сайта, нажмите <a href="https://auctions.aleado.ru/auth/login.php?cur_url=YXVjdGlvbnM/cD1wcm9qZWN0L2ZpbmRsb3RzJnMmbGQ=">"Вход"</a></p><p>Если Вы не зарегистрированы, просим Вас пройти <a href="https://auctions.aleado.ru/manager/?p=project/register">регистрацию</a>.</p></td></tr></table></td></tr></table><script>
+                function loadDocument() {
+                }
+            </script>
+
+
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <!--Bottom menu-->
+            <tr>
+                <td>
+                    <div class="footer">
+                        <div class="foot1">
+                            <table border="0" cellpadding="1" cellspacing="1" class="Verdana12px"><tr>
+<td><img src="/static/img/main_menu_separator.gif" alt=""></td>
+<td valign="middle" nowrap align="center"><a href="/auctions/?p=project/searchform&amp;searchtype=max&amp;s&amp;ld" class="anchorclass" rel="subauto">Автомобили</a></td>
+<div id="subauto" class="anylinkcss"><ul>
+<li><b>Аукционы Японии</b></li>
+<li><a href="/stats/?p=project/fastform">Статистика продаж</a></li>
+<li><a href="/autocatalog/?p=project/companies">Каталог</a></li>
+</ul></div>
+<td><img src="/static/img/main_menu_separator.gif" alt=""></td>
+<td valign="middle" nowrap align="center"><a href="/stats/?p=project/fastform">Авто<br/>статистика</a></td>
+<td><img src="/static/img/main_menu_separator.gif" alt=""></td>
+<td valign="middle" nowrap align="center"><a href="/autocatalog/?p=project/companies">Авто<br/>каталог</a></td>
+<td><img src="/static/img/main_menu_separator.gif" alt=""></td>
+<td valign="middle" nowrap align="center"><a href="/auctions/?p=project/productiondate">Определение даты<br/>выпуска автомобиля</a></td>
+<td><img src="/static/img/main_menu_separator.gif" alt=""></td>
+<td valign="middle" nowrap align="center"><a href="/moto/?p=project/searchform&amp;searchtype=max&amp;s&amp;ld" class="anchorclass" rel="submoto">Мотоциклы</a></td>
+<div id="submoto" class="anylinkcss"><ul>
+<li><a href="/moto/?p=project/searchform&amp;searchtype=max&amp;s&amp;ld">Аукционы Японии</a></li>
+<li><a href="/motostats/?p=project/searchform&amp;searchtype=max&amp;s&amp;ld">Статистика продаж</a></li>
+</ul></div>
+<td><img src="/static/img/main_menu_separator.gif" alt=""></td>
+<td valign="middle" nowrap align="center"><a href="/bids/parts/search">Заказ новых<br/>оригинальных запчастей</a></td>
+<td><img src="/static/img/main_menu_separator.gif" alt=""></td>
+<td valign="middle" nowrap align="center"><a href="/yahoo/">Аукцион<br/>Yahoo</a></td>
+<td><img src="/static/img/main_menu_separator.gif" alt=""></td>
+<td valign="middle" nowrap align="center"><a href="/chat/?p=project/foundtopics">Вопрос<br/>Ответ</a></td>
+<td><img src="/static/img/main_menu_separator.gif" alt=""></td>
+<td valign="middle" nowrap align="center"><a href="https://aleado.ru/contacts.html">Контакты</a></td>
+</tr></table>
+                        </div>
+                    </div>
+                </td>
+             </tr>
+            <!--Copyright-->
+            <tr>
+                <td class="Verdana9px" height="22" valign="middle" align="center">
+                    <font color="#666666">
+     © 2008-2024 Aleado Разработка и поддержка:
+    <a href="https://aleado.ru">aleado.ru</a></font>
+                </td>
+            </tr>
+            </table>
+
+        </td>
+    </tr>
+    </table>
+
+</body>
+</html>
